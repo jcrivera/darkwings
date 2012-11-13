@@ -17,5 +17,5 @@ end
 
 # Note that this will block current thread.
 EventMachine.run {
-  EventMachine.start_server "127.0.0.1", ARGV[0] || 8081, DarkwingsServer
+  EventMachine.start_server "0.0.0.0", ARGV[0] || 8081, DarkwingsServer
 }
