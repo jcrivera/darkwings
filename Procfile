@@ -1,1 +1,1 @@
-darkwings: bundle exec ruby lib/darkwings.rb $PORT
+web: bundle exec ruby lib/darkwings.rb $PORT
