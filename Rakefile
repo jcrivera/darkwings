@@ -15,12 +15,12 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "darkwings"
-  gem.homepage = "http://github.com/jcrivera/darkwings"
+  gem.homepage = "http://github.com/cherivera/darkwings"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "jrivera@constantcontact.com"
-  gem.authors = ["Jose Rivera"]
+  gem.summary = %Q{Send messages to your followers via SMTP}
+  gem.description = %Q{Dark wings... but your words don't have to be.  Distribute a message to your subscribed followers by sending an email.}
+  gem.email = "chrivera@gmail.com"
+  gem.authors = ["chrivera"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
@@ -30,14 +30,6 @@ Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
   test.pattern = 'test/**/test_*.rb'
   test.verbose = true
-end
-
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
 end
 
 task :default => :test
