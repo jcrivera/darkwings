@@ -1,1 +1,1 @@
-darkwings: bundle exec ruby -Ilib start.rb $PORT
+darkwings: bundle exec ruby lib/darkwings.rb $PORT
