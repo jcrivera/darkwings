@@ -17,9 +17,8 @@ class DarkwingsServer < EventMachine::Protocols::SmtpServer
   end
 
   ROUTES = [
-    {pattern: /GET \/documents\/(d+)/, action: :show},
-    {pattern: /GET \/documents/, action: :index},
-    {pattern: /POST \/documents\/new/, action: :new},
+    {pattern: /GET/, action: :show},
+    {pattern: /POST/, action: :create}, 
   ]
 
   def routes(recipient)
